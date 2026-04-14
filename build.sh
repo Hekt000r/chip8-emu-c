@@ -1,5 +1,5 @@
+#!/bin/bash
 echo "[COMPILE] Compiling source ..."
-gcc main.c instructions.c -o build/emu.o
+gcc main.c display.c -lSDL2 -o build/emu.o
 
-echo "[RUN] Running executable ..."
-./build/emu.o
+echo "[FINISH] Built successfully."
